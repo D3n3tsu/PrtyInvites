@@ -8,7 +8,7 @@ namespace PartyInvites.Models
 {
     public class GuestResponce
     {
-        [Required(ErrorMessage ="Please, enter your neme!")]
+        [Required(ErrorMessage ="Please, enter your name!")]
         public string Name { get; set; }
         [Required(ErrorMessage ="PLease enter your email address.")]
         [RegularExpression(".+\\@.+\\..+", ErrorMessage ="PLease enter a valid email address.")]

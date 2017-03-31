@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using PartyInvites.Models;
 
+
 namespace PartyInvites.Controllers
 {
     public class HomeController : Controller
@@ -26,7 +27,7 @@ namespace PartyInvites.Controllers
         [HttpPost]
         public ViewResult RsvpForm(GuestResponce guestResponce)
         {
-            //Todo: Email responce to the party organizers
+            //Todo: Email response to the party organizers
             return View("Thanks", guestResponce);
         }
     }
